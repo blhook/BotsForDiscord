@@ -1,0 +1,30 @@
+{
+  "name": "discord-bots",
+  "version": "1.0.0",
+  "description": "A suite of Discord bots that may be useful for servers.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=23.4.0",
+    "npm": ">=10.9.2"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "register": "tsx src/register.ts",
+    "start": "node dist/index.js",
+    "build": "tsup src/index.ts --minify"
+  },
+  "author": "Brandon Hook",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  }
+}
