@@ -8,24 +8,24 @@ This specific bot was designed with portability in mind, so the code is centrali
 ## Workflow
 Upon a user running the command `/hunt`, this bot will pop up a modal to the user. The modal will ask basic information from them to help facilitate others to understand what to search for.  
 
-![Initial Modal Load](../../documentation/hunt-bot/modal.png)
+![Initial Modal Load](../../../documentation/hunt-bot/modal.png)
 
 Once the user fills out the information, they can press submit, which will do two things. First it will make a public message to the channel where the request was made relaying the information from the modal. Second it will send a ephemeral message to the original person that made the request, which contains information on how they can manage the life-cylce of that request.
 
-![Initial Reply](../../documentation/hunt-bot/initial_reply.png)
+![Initial Reply](../../../documentation/hunt-bot/initial_reply.png)
 
 1. Delete: Will delete the request from view. This cannot be undone. 
 
-![Initial Reply](../../documentation/hunt-bot/delete.png)
+![Initial Reply](../../../documentation/hunt-bot/delete.png)
 
 
 2. Edit: Brings up a modal for the user to re-enter information regarding the request. After the user submits it, it will update the request and send an ephemeral message to the user letting them know it was updated.
 
-![Edit](../../documentation/hunt-bot/edit.png)
+![Edit](../../../documentation/hunt-bot/edit.png)
 
 3. Complete: Marks the request as complete, by ~~striking through~~ all of the content and making a note on top.
     
-![Complete](../../documentation/hunt-bot/complete.png)
+![Complete](../../../documentation/hunt-bot/complete.png)
 
 4. Re-enable: Resets the "complete" state of a request by removing the strike through and note on top. This effectively reverts it back to the initial reply. 
 
